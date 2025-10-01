@@ -599,31 +599,10 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">Xen<span>mesh</span></a>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="custom-design.html" class="active">Custom Design</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <x-layouts.Header/>
 
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Custom Design Portal</h1>
-            <p>Create your unique jute bag designs with our easy-to-use design portal. Perfect for brands, retailers, and promotional events.</p>
-            <a href="#design-form" class="btn">Start Designing</a>
-        </div>
-    </section>
+    <x-layouts.Custom-design-hero/>
 
     <!-- Design Process -->
     <section class="design-process">
@@ -632,33 +611,12 @@
                 <h2>Our Design Process</h2>
                 <p>Simple steps from concept to delivery</p>
             </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3>Submit Your Design</h3>
-                    <p>Use our design portal or upload your own design files with specifications.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3>Review & Quote</h3>
-                    <p>We'll review your design and provide a detailed quote within 24-48 hours.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3>Sample Production</h3>
-                    <p>We create a physical sample for your approval before mass production.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h3>Bulk Manufacturing</h3>
-                    <p>Once approved, we manufacture your order with strict quality control.</p>
-                </div>
-            </div>
+            <x-card.Design-process/>
         </div>
     </section>
 
     <!-- Design Portal -->
-    <section class="design-portal" id="design-form">
+    <section class="design-portal" id="design-form" style="width: 100%;">
         <div class="container">
             <div class="section-title">
                 <h2>Design Your Bag</h2>
@@ -775,144 +733,16 @@
                     </form>
                 </div>
 
-                <div class="design-preview">
-                    <h3>Design Preview</h3>
-                    <div class="preview-controls">
-                        <button class="preview-btn active" data-view="front">Front</button>
-                        <button class="preview-btn" data-view="back">Back</button>
-                        <button class="preview-btn" data-view="side">Side</button>
-                    </div>
-                    <div class="preview-area">
-                        <div class="preview-bag" id="previewBag">
-                            <div class="preview-handle"></div>
-                            <div class="preview-design" id="previewDesign">
-                                Your Design Will Appear Here
-                            </div>
-                        </div>
-                    </div>
-                    <div class="spec-summary">
-                        <h4>Specification Summary</h4>
-                        <div class="spec-item">
-                            <span>Bag Type:</span>
-                            <span class="spec-value" id="specType">Tote Bag</span>
-                        </div>
-                        <div class="spec-item">
-                            <span>Size:</span>
-                            <span class="spec-value" id="specSize">Medium (12" x 14")</span>
-                        </div>
-                        <div class="spec-item">
-                            <span>Color:</span>
-                            <span class="spec-value" id="specColor">Natural Jute</span>
-                        </div>
-                        <div class="spec-item">
-                            <span>Handles:</span>
-                            <span class="spec-value" id="specHandles">Standard Jute</span>
-                        </div>
-                        <div class="spec-item">
-                            <span>Printing:</span>
-                            <span class="spec-value" id="specPrinting">Silkscreen</span>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
 
     <!-- Capabilities -->
-    <section class="capabilities">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Customization Capabilities</h2>
-                <p>We can bring almost any design to life</p>
-            </div>
-            <div class="capabilities-grid">
-                <div class="capability-card">
-                    <div class="capability-icon">
-                        <i class="fas fa-print"></i>
-                    </div>
-                    <h3>Printing Techniques</h3>
-                    <p>Silkscreen, digital printing, heat transfer, and foil stamping on jute fabric.</p>
-                </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>Color Options</h3>
-                    <p>Natural, bleached, or custom-dyed jute in various color combinations.</p>
-                </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
-                        <i class="fas fa-ruler-combined"></i>
-                    </div>
-                    <h3>Size Variations</h3>
-                    <p>Custom sizes and dimensions to meet your specific requirements.</p>
-                </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>Material Mix</h3>
-                    <p>Combine jute with cotton, linen, or other fabrics for unique designs.</p>
-                </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
-                        <i class="fas fa-vest"></i>
-                    </div>
-                    <h3>Accessories</h3>
-                    <p>Add pockets, zippers, buttons, linings, and other functional elements.</p>
-                </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Quality Assurance</h3>
-                    <p>Rigorous quality checks at every stage of the production process.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <x-card.Customization-capacities/>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Xenmesh</h3>
-                    <p>Leading exporter of premium jute fashion bags to global markets including EU, Japan, USA, and Canada.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <a href="index.html">Home</a>
-                    <a href="products.html">Products</a>
-                    <a href="custom-design.html">Custom Design</a>
-                    <a href="index.html#contact">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <a href="index.html#contact">Sample Orders</a>
-                    <a href="custom-design.html">Custom Designs</a>
-                    <a href="index.html#contact">Bulk Export</a>
-                    <a href="index.html#contact">Private Labeling</a>
-                </div>
-                <div class="footer-col">
-                    <h3>Markets</h3>
-                    <a href="#">European Union</a>
-                    <a href="#">Japan</a>
-                    <a href="#">United States</a>
-                    <a href="#">Canada</a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 Xenmesh. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <x-layouts.Footer/>
 
     <script>
         // Mobile Navigation Toggle

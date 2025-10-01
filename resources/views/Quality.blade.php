@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -477,7 +478,8 @@
             font-size: 1.2rem;
         }
 
-        .footer-col p, .footer-col a {
+        .footer-col p,
+        .footer-col a {
             color: #ddd;
             margin-bottom: 10px;
             display: block;
@@ -523,7 +525,7 @@
             .page-header h1 {
                 font-size: 2.5rem;
             }
-            
+
             .materials-content {
                 grid-template-columns: 1fr;
             }
@@ -537,7 +539,8 @@
                 padding-left: 60px;
             }
 
-            .step-marker, .step-number {
+            .step-marker,
+            .step-number {
                 left: 30px;
             }
         }
@@ -605,68 +608,16 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="logo">Xen<span>mesh</span></a>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="custom-design.html">Custom Design</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="quality.html" class="active">Quality</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <x-layouts.Header />
 
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Quality & Materials</h1>
-            <p>Discover our commitment to excellence, sustainable materials, and rigorous quality control processes that meet international standards.</p>
-            <a href="#standards" class="btn">Our Quality Standards</a>
-        </div>
-    </section>
+    <x-layouts.Quality-hero />
 
     <!-- Quality Standards -->
-    <section class="quality-standards" id="standards">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Quality Standards</h2>
-                <p>Excellence in every stitch, from raw material to finished product</p>
-            </div>
-            <div class="standards-grid">
-                <div class="standard-card">
-                    <div class="standard-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Premium Raw Materials</h3>
-                    <p>We source only the highest grade jute fibers, ensuring durability, texture consistency, and superior quality in every bag.</p>
-                </div>
-                <div class="standard-card">
-                    <div class="standard-icon">
-                        <i class="fas fa-ruler-combined"></i>
-                    </div>
-                    <h3>Precision Craftsmanship</h3>
-                    <p>Every bag is crafted with attention to detail, from precise stitching to consistent sizing and finishing.</p>
-                </div>
-                <div class="standard-card">
-                    <div class="standard-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>International Compliance</h3>
-                    <p>Our products meet EU, US, Japanese, and Canadian import regulations for quality, safety, and sustainability.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <x-card.Quality-standards />
 
     <!-- Materials Section -->
     <section class="materials">
@@ -816,92 +767,22 @@
         </div>
     </section>
 
-    <!-- Compliance -->
-    <section class="compliance">
-        <div class="container">
-            <div class="section-title">
-                <h2>International Market Compliance</h2>
-                <p>Meeting specific requirements for global markets</p>
-            </div>
-            <div class="compliance-content">
-                <div class="compliance-card">
-                    <h3><i class="fas fa-flag-eu"></i> European Union</h3>
-                    <p>Our jute bags comply with EU packaging regulations, REACH compliance for chemicals, and meet sustainability directives for import into all EU member states.</p>
-                </div>
-                <div class="compliance-card">
-                    <h3><i class="fas fa-flag-usa"></i> United States</h3>
-                    <p>We meet US import regulations, CPSIA compliance where applicable, and provide all necessary documentation for customs clearance.</p>
-                </div>
-                <div class="compliance-card">
-                    <h3><i class="fas fa-flag"></i> Japan & Canada</h3>
-                    <p>Our products comply with JIS standards for Japan and Canadian import regulations, ensuring smooth customs processing and market acceptance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Experience Xenmesh Quality Firsthand</h2>
-            <p>Request free samples to see and feel the difference that our quality standards make in every jute bag we produce.</p>
-            <a href="index.html#contact" class="btn btn-light">Request Quality Samples</a>
-        </div>
-    </section>
+
+
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Xenmesh</h3>
-                    <p>Leading exporter of premium jute fashion bags to global markets including EU, Japan, USA, and Canada.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <a href="index.html">Home</a>
-                    <a href="products.html">Products</a>
-                    <a href="custom-design.html">Custom Design</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="quality.html">Quality</a>
-                    <a href="index.html#contact">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <a href="index.html#contact">Sample Orders</a>
-                    <a href="custom-design.html">Custom Designs</a>
-                    <a href="index.html#contact">Bulk Export</a>
-                    <a href="index.html#contact">Private Labeling</a>
-                </div>
-                <div class="footer-col">
-                    <h3>Markets</h3>
-                    <a href="#">European Union</a>
-                    <a href="#">Japan</a>
-                    <a href="#">United States</a>
-                    <a href="#">Canada</a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 Xenmesh. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <x-layouts.Footer />
 
     <script>
         // Mobile Navigation Toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
-        
+
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-        
+
         // Close mobile menu when clicking on a link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
@@ -910,4 +791,5 @@
         });
     </script>
 </body>
+
 </html>

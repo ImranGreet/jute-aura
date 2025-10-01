@@ -494,34 +494,9 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">Xen<span>mesh</span></a>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <x-layouts.Header/>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Eco-Friendly Jute Fashion Bags for Global Markets</h1>
-                <p>Premium quality jute bags crafted with sustainability in mind. Exporting to EU, Japan, USA, Canada and beyond.</p>
-                <a href="#contact" class="btn">Get In Touch</a>
-            </div>
-        </div>
-    </section>
+    <x-layouts.Hero/>
 
     <!-- Products Section -->
     <section class="products" id="products">
@@ -576,52 +551,7 @@
     </section>
 
     <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
-        <div class="container">
-            <div class="section-title">
-                <h2>Client Reviews</h2>
-                <p>What our international clients say about us</p>
-            </div>
-            <div class="review-container">
-                <div class="review-card">
-                    <p class="review-text">"Xenmesh provided excellent quality jute bags for our retail chain in Germany. Their attention to detail and timely delivery was impressive."</p>
-                    <div class="reviewer">
-                        <div class="reviewer-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Klaus Müller</h4>
-                            <p>Retail Manager, Germany</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">"We've been working with Xenmesh for over two years now. Their custom design capabilities and consistent quality make them our preferred supplier."</p>
-                    <div class="reviewer">
-                        <div class="reviewer-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Fashion Buyer, USA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <p class="review-text">"The sample process was smooth, and the final bulk order exceeded our expectations. Highly recommended for Japanese market requirements."</p>
-                    <div class="reviewer">
-                        <div class="reviewer-img">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <h4>Yuki Tanaka</h4>
-                            <p>Import Manager, Japan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <x-card.Review/>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
@@ -631,40 +561,7 @@
                 <p>Connect with us for samples, custom designs, or bulk orders</p>
             </div>
             <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Let's Work Together</h3>
-                    <p>We specialize in supplying high-quality jute fashion bags to international markets. Whether you need samples, custom designs, or bulk orders, we're here to help.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Our Location</h4>
-                                <p>Dhaka, Bangladesh</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4>Email Us</h4>
-                                <p>info@xenmesh.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4>Call Us</h4>
-                                <p>+880 1234 567890</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <x-Contact.Contact-info/>
                 
                 <div class="contact-form">
                     <h3>Send Us Your Requirements</h3>
@@ -685,75 +582,14 @@
                         </div>
                     </div>
                     
-                    <form id="inquiryForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company Name</label>
-                            <input type="text" id="company" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="country">Country</label>
-                            <input type="text" id="country" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Requirements</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Submit Inquiry</button>
-                    </form>
+                   <x-Contact.Contact-form/>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Xenmesh</h3>
-                    <p>Leading exporter of premium jute fashion bags to global markets including EU, Japan, USA, and Canada.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <a href="#home">Home</a>
-                    <a href="#products">Products</a>
-                    <a href="#reviews">Reviews</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <a href="#contact">Sample Orders</a>
-                    <a href="#contact">Custom Designs</a>
-                    <a href="#contact">Bulk Export</a>
-                    <a href="#contact">Private Labeling</a>
-                </div>
-                <div class="footer-col">
-                    <h3>Markets</h3>
-                    <a href="#">European Union</a>
-                    <a href="#">Japan</a>
-                    <a href="#">United States</a>
-                    <a href="#">Canada</a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 Xenmesh. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+   <x-layouts.Footer/>
 
     <script>
         // Mobile Navigation Toggle

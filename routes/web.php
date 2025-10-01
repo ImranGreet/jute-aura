@@ -24,10 +24,3 @@ Route::get('/quality',function(){
     return view('quality');
 });
 
-Route::get('/market',function(){
-    return view('market');
-});
-
-Route::get('/order',function(){
-    return view('order');
-});

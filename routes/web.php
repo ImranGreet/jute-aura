@@ -24,3 +24,6 @@ Route::get('/quality',function(){
     return view('quality');
 });
 
+Route::get('/gift-box',function(){
+    return view('Gift-box');
+});

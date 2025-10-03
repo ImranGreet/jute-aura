@@ -1,29 +1,29 @@
 <?php
 
+use App\Http\Controllers\Client\HomePageController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
 Route::get('/product-list',function(){
-    return view('product-list');
+    return view('Pages.Client.product-list');
 });
 
 
 Route::get('/custom-design',function(){
-    return view('custom-design');
+    return view('Pages.Client.custom-design');
 });
 
 Route::get('/blog',function(){
-    return view('blog');
+    return view('Pages.Client.blog');
 });
 
 Route::get('/quality',function(){
-    return view('quality');
+    return view('Pages.Client.quality');
 });
 
 Route::get('/gift-box',function(){
-    return view('Gift-box');
+    return view('Pages.Client.gift-box');
 });
+
+
+
+Route::get('/', [HomePageController::class, 'index']);

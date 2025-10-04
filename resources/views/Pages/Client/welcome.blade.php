@@ -75,15 +75,15 @@
                     <p>Select your preferred option below:</p>
                     
                     <div class="form-options">
-                        <div class="form-option active" data-option="sample">
+                        <div class="form-option " data-option="sample">
                             <i class="fas fa-box-open"></i>
                             <p>Purchase Sample</p>
                         </div>
-                        <div class="form-option" data-option="custom">
+                        <div class="form-option " data-option="custom">
                             <i class="fas fa-pencil-alt"></i>
                             <p>Custom Design</p>
                         </div>
-                        <div class="form-option" data-option="bulk">
+                        <div class="form-option active" data-option="bulk">
                             <i class="fas fa-shipping-fast"></i>
                             <p>Bulk Order</p>
                         </div>

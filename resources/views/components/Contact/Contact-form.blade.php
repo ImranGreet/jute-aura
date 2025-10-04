@@ -1,5 +1,9 @@
  <form id="inquiryForm">
      <div class="form-group">
+         <label for="name">Items Name</label>
+         <input type="text" id="items_name" class="form-control" required>
+     </div>
+     <div class="form-group">
          <label for="name">Full Name</label>
          <input type="text" id="name" class="form-control" required>
      </div>

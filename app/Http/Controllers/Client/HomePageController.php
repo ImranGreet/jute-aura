@@ -32,4 +32,19 @@ class HomePageController extends Controller
         return redirect()->back()->with('success', 'Your requirement has been sent successfully!');
     }
 
+    public function editSendClientRequirement(Request $request, $id)
+    {
+        $clientRequirement = ClientRequirment::findOrFail($id); 
+        $validated = $request->validate([
+            'name'      => 'required|string|max:255',
+            'email'     => 'required|email|max:255',
+            'phone'     => 'required|string|max:20',
+            'company'   => 'nullable|string|max:255',
+            'website'   => 'nullable|string|max:255',
+            'country'   => 'nullable|string|max:100',
+            'message'   => 'nullable|string',
+        ]);
+        $clientRequirement->update($validated);
+        return redirect()->back()->with('success', 'Your requirement has been updated successfully!');
+    }
 }

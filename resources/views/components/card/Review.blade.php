@@ -6,7 +6,7 @@
             </div>
             <div class="review-container">
                 <div class="review-card">
-                    <p class="review-text">"Xenmesh provided excellent quality jute bags for our retail chain in Germany. Their attention to detail and timely delivery was impressive."</p>
+                    <p class="review-text">"Xenjute provided excellent quality jute bags for our retail chain in Germany. Their attention to detail and timely delivery was impressive."</p>
                     <div class="reviewer">
                         <div class="reviewer-img">
                             <i class="fas fa-user"></i>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="review-card">
-                    <p class="review-text">"We've been working with Xenmesh for over two years now. Their custom design capabilities and consistent quality make them our preferred supplier."</p>
+                    <p class="review-text">"We've been working with Xenjute for over two years now. Their custom design capabilities and consistent quality make them our preferred supplier."</p>
                     <div class="reviewer">
                         <div class="reviewer-img">
                             <i class="fas fa-user"></i>

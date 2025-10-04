@@ -294,8 +294,8 @@
                             </div>
                             <p>${product.description}</p>
                             <div class="product-actions">
-                                <a href="index.html#contact" class="btn btn-outline">Request Sample</a>
-                                <a href="index.html#contact" class="btn">Bulk Order</a>
+                                <a href="{{'/'}}#contact" class="btn btn-outline">Request Sample</a>
+                                <a href="{{'/'}}#contact" class="btn">Bulk Order</a>
                             </div>
                         </div>
                     `;

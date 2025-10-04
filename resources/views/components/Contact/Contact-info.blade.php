@@ -18,7 +18,7 @@
             </div>
             <div>
                 <h4>Email Us</h4>
-                <p>info@xenmesh.com</p>
+                <p>info@xenjute.com</p>
             </div>
         </div>
         <div class="contact-item">

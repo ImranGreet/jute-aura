@@ -2,7 +2,7 @@
 <header>
     <div class="container">
         <nav class="navbar">
-            <a href="{{ route('home') }}" class="logo">Xen<span>mesh</span></a>
+            <a href="{{ route('home') }}" class="logo">Xen<span>jute</span></a>
             <ul class="nav-links">
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ url('/product-list') }}">Products</a></li>

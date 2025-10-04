@@ -26,4 +26,4 @@ Route::get('/gift-box',function(){
 
 
 
-Route::get('/', [HomePageController::class, 'index']);
+Route::get('/', [HomePageController::class, 'index'])->name('home');

@@ -95,4 +95,54 @@
         </div>
     </section>
 
+    <script>
+         // Form Option Selection
+        const formOptions = document.querySelectorAll('.form-option');
+
+        formOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                // Remove active class from all options
+                formOptions.forEach(opt => opt.classList.remove('active'));
+                // Add active class to clicked option
+                option.classList.add('active');
+
+                // Update form message placeholder based on selection
+                const messageField = document.getElementById('message');
+                const selectedOption = option.getAttribute('data-option');
+
+                if (selectedOption === 'sample') {
+                    messageField.placeholder = "Please specify which sample(s) you're interested in and any specific requirements...";
+                } else if (selectedOption === 'custom') {
+                    messageField.placeholder = "Please describe your custom design requirements, including size, color, printing, and any other details...";
+                } else if (selectedOption === 'bulk') {
+                    messageField.placeholder = "Please provide details about your bulk order requirements including quantity, timeline, and any specific product details...";
+                }
+            });
+        });
+
+        // Form Submission
+        const inquiryForm = document.getElementById('inquiryForm');
+
+        inquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get selected option
+            const selectedOption = document.querySelector('.form-option.active').getAttribute('data-option');
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                company: document.getElementById('company').value,
+                country: document.getElementById('country').value,
+                message: document.getElementById('message').value,
+                option: selectedOption
+            };
+
+            // In a real application, you would send this data to your server
+            // For this demo, we'll just show an alert
+            alert(`Thank you for your ${selectedOption} inquiry, ${formData.name}! We will contact you at ${formData.email} shortly.`);
+
+            // Reset form
+            inquiryForm.reset();
+        });
+    </script>
 </x-layouts.Client.Layout>

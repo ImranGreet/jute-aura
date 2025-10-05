@@ -25,5 +25,9 @@ Route::get('/gift-box',function(){
 });
 
 
+Route::get('/order-form',function(){
+    return view('Pages.Client.Order-form');
+});
+
 
 Route::get('/', [HomePageController::class, 'index'])->name('home');
